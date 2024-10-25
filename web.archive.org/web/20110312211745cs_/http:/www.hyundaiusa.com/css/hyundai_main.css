@@ -1,0 +1,3315 @@
+/* Copyright (c) 2009, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt version: 2.7.0 */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+.msie6 { filter:expression(document.execCommand("BackgroundImageCache", false, true)); }
+.msie7 img { -ms-interpolation-mode:bicubic; }
+
+a {
+	outline: none;
+}
+
+/* SIFR
+============================================= */
+object { 
+	outline:none !important;
+}
+.sIFR-flash {
+	visibility:visible !important;
+	margin:0;
+	padding:0;
+}
+.sIFR-replaced, 
+.sIFR-ignore {
+	visibility:visible !important;
+}
+.sIFR-alternate {
+	position:absolute;
+	left:0;
+	top:0;
+	width:0;
+	height:0;
+	display:block;
+	overflow:hidden;
+}
+.sIFR-replaced div.sIFR-fixfocus {
+	margin:0pt; 
+	padding:0pt; 
+	overflow:auto; 
+	letter-spacing:0px; 
+	float:none;
+}
+.sIFR-flash + div[adblocktab=true] {
+	display:none !important;
+}
+.sIFR-active h1 .page_section,
+.sIFR-active #specsCarTrims .review,
+.sIFR-active h3.specs_header_text,
+.sIFR-active h2,
+.sIFR-active .content-left h3,
+.sIFR-active .dealer-list h5,
+.sIFR-active #shadowbox h3,
+.sIFR-active #shadowbox label,
+.sIFR-active h5 {
+	visibility:hidden;
+}
+
+/* Use to hide things that are inelligible for receiving leads */
+.receive_lead_no { display: none !important; }
+
+
+/* BASE CLASSES
+============================================= */
+/* CLIENT-SIDE TEMPLATES
+--------------------------------------------- */
+#templates { 
+	display:none !important; 
+}
+
+/* LINKS 
+--------------------------------------------- */
+a:link,
+a:visited {
+	color:#084c8d;
+	text-decoration:none;
+}
+a:hover {
+	color:#618ec2;
+	text-decoration:none;
+}
+
+/* HEADERS 
+--------------------------------------------- */
+/* H1 */
+h1 {
+	color:#555;
+	font-size:18px;
+	font-weight:normal;
+	padding-left:15px;
+	text-transform:uppercase;
+}
+h1 .subtitle {
+	color:#4C647E;
+}
+#title.aboutus_section h1 {
+	padding-left:70px;
+	font-weight:normal;
+}
+
+/* H2 */
+h2 {
+	color:#3e3d3a;
+	font-size:19px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+h2 .subhead {
+	color:#4C647E;	
+}
+h2.vehicle_header{
+	color:#403f3c;
+	font-size:26px;	
+	letter-spacing: -0.3;
+	background-color:transparent;
+	text-transform:uppercase;
+}
+
+/* H3 */
+h3{
+	color:#3e3d3a;
+	font-size:20px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+h3 a:link, h3 a:visited, h3 a:active{
+	color:#5d7e9b;
+	text-decoration:none;
+}
+h3 a:hover{
+	color:#618ec2;
+	text-decoration:none;
+}
+h3 span.subhead{
+	clear:both;
+	display:block;
+	color:#707070;
+	font-size:11px;
+}
+.careers_main h3{
+	font-size:15px;	
+	color: #3e3d3a; 
+	text-transform: uppercase; 
+	font-size: 15px;
+	font-weight:normal;
+}
+.why_hyundai h3{
+	color: #666666;
+	text-transform: uppercase; 
+	font-size: 18px;
+	font-weight:normal;
+}
+.content_copy.why_hyundai h3{
+	color: #456584;
+	text-transform: uppercase; 
+	font-size: 20px;
+	font-weight:normal;
+}
+#mainDealerLocator h3{
+	color: #555555; 
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight:normal;
+}
+
+/* H4 */
+h4{
+	color:#3e3d3a;
+	font-size:16px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+/* H5 */
+h5{
+	color:#8b8b8b;
+	font-size:12px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+h5.section_header{
+	border-bottom:1px solid #e0e0e0;
+	margin-bottom:10px;
+	font-weight:normal;
+}
+
+
+div.sectionDivider {
+	clear:both;
+	height:12px;
+	border:0;
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/hr_bgnd.png) no-repeat scroll 15px 0;
+	margin:20px 0;
+}
+div.shortSectionDivider {
+	clear:both;
+	height:12px;
+	border:0;
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/hr_bgnd.png) no-repeat 15px 0;
+	margin:0;
+}
+.full_page_template div.sectionDivider{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/hr_bgnd.png) no-repeat center top;
+}
+p, address {
+	padding-bottom:10px;
+}
+strong { font-weight:bold; }
+
+/* GLOBAL FORM STYLES */
+textarea {
+	/* define height and width per instance */
+	border: 1px solid #C0C0C0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 5px;
+	overflow: auto;
+	color: #4C647E;
+	background: #FFFFFF url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/form-textarea-generic-bg.png) repeat-x 0 0;
+}
+select {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/form-textarea-generic-bg.png) repeat-x 0 0;
+	border:1px solid #C0C0C0;
+	color:#4C647E;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:3px 2px;
+}
+select option {
+	background:#fff;
+	display:block;
+}
+select option[selected=selected] {
+	background:transparent;
+}
+input.input_radio {
+	color: #4C647E;
+}
+input.input_text {
+	border: 1px solid #C0C0C0;
+	padding: 5px;
+	color: #4C647E;
+	background: #FFFFFF url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/form-textarea-generic-bg.png) repeat-x 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;	
+}
+select.disabled,
+input.disabled {
+	background:#C0C0C0 url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/form-textarea-generic-disabled-bg.png);
+	border:1px solid #B0B0B0;
+}
+select.disabled {
+	background-color:transparent;
+}
+textarea.input_focus, 
+input.input_focus {
+	color: #fff;
+	background: #4f6984 url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/form-textarea-generic-bg.png) repeat-x 0 -500px;
+	border-color: #364657;
+}
+.invalid_input {
+	border: 1px solid #FFFE01 !important;
+}
+.error_summary {
+	background:#F3F3DC url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/form_error.gif) no-repeat 10px 10px;
+	border:1px solid #FFFE01;
+	clear:both;
+	display:none;
+	font-size:11px;
+	margin:10px 10px 10px 0;
+	padding:10px;
+}
+.error_summary li {
+	list-style: disc inside;
+	font-size: 12px;	
+	margin-left: 10px;
+}
+.error_summary p {
+	font-weight: bold;
+	padding-left: 23px;
+	font-size: 12px;
+}
+.general_content ol {
+	padding-bottom: 10px;
+}
+.general_content ol li {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+/* MAIN ELEMENTS */
+html{
+	color:#333;
+	background: #dfdfdf;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal; 
+}
+body{	
+	text-align: center;
+	min-width: 1000px;
+	padding: 0;
+	margin: 0;	
+}
+#page {
+	display:block;
+	position: relative;
+	zoom:1;
+}
+#header {
+	overflow-y:visible;
+	position:relative;
+	z-index: 8000;
+}
+#title {
+	position: relative;
+	clear:both;
+	text-align:left;
+	width: 980px;
+	margin:0 auto;
+	padding: 10px 10px 5px;
+	z-index: 201;
+}
+.subnav_active #title {
+	margin:70px auto 0;
+}
+#wrapper {
+	position: relative;	
+	background:#ededed url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/wraper_bgnd.png) repeat-x;
+	width: 100%;
+	z-index: 100;
+}
+#content {
+	position: relative;		
+	text-align: left;
+	width: 995px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	background:#ededed;	
+}
+#mainContent {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/main_content_bgnd.png) repeat-x;
+	padding:5px 0;
+	position:relative;
+	zoom:1;
+}
+#mainContent:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#bodyContent{
+	position:relative;
+	float: left;
+	width: 777px;
+	padding: 0 0 20px 0;
+}
+.upgrade_flash_page #bodyContent{
+	padding-bottom: 200px;
+}
+.full_page_template #bodyContent{
+	position:relative;
+	float: none;
+	width: 994px;
+	padding: 0 0 20px 0;	
+}
+.half_page_template #bodyContent{
+	float: left;
+	width: 600px;
+}
+#altContent{
+	position:relative;
+	float: left;
+	width: 217px;	
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/alt_content_bgnd.png) repeat-y;	
+	text-align:left;	
+}
+.full_page_template #altContent{
+	display:none;
+}
+.half_page_template #altContent{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/half-template-alt-bg.png) repeat-y;
+	width: 393px;
+	padding: 15px;
+}
+#altContent .container{
+	padding: 12px;
+}
+#altContentBtm{	
+	padding-bottom: 170px;
+	position:relative;
+	float: left;
+	width: 217px;	
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/alt_content_btm.png) no-repeat left bottom;
+}
+#retrieve_saved_vehicle{
+	margin-top: 19px;
+}
+.half_page_template #altContentBtm{
+	width: 393px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/half-template-altbtm-bg.png) no-repeat left bottom;
+}
+#footer {
+	width: 100%;
+	background: #fff url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/footer_bgnd.gif) repeat-x 0 0;
+	text-align: center;
+	display: block;
+	padding: 6px 0 40px 0;	
+}
+.upgrade_flash_page #footer{
+	background: #fff;
+}
+/* MAIN NAVIGATION
+============================================= */
+#navigation {
+	height:65px;
+	margin:0 auto;
+	position:relative;	
+	width:1000px;
+	z-index:8001;
+	/*zoom:1;*/
+}
+.upgrade_flash_page #navigation{
+	display:none;
+}
+/* Top Bar Above Nav */
+#navGlobal ul {
+	/*width: 354px;*/
+	list-style-type: none;
+	overflow: hidden;
+}
+#navGlobal ul li {
+	float: left;
+	height: 27px;
+}
+#navGlobal li a {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/nav-global-sections.gif) no-repeat;
+	float: left;
+	overflow: hidden;
+	padding-top: 27px;
+	height: 0px;
+	width: 125px;
+}
+/* Flash Navigation Bar */
+#flashNavContainer {
+	/* background:url(/web/20110307001607im_/http://www.hyundaiusa.com/images/global/top-nav.png) no-repeat center center;*/
+	height: 43px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute; 
+	top: 20px; 
+	text-align: left;
+	width: 1000px;
+	overflow: hidden;
+	z-index: 3000;
+}
+#flashNavContainer img {
+	left: 3px;
+	position: absolute;
+	top: 4px;
+	display:none;
+}
+.en #flashNavContainer img.en_top_nav {	
+	display:block;
+}
+.kr #flashNavContainer img.kr_top_nav {	
+	display:block;
+}
+#flashNavContainer li, 
+#flashNavContainer ul, 
+#flashNavContainer a {
+	font-size: 10px;
+	color: #efefef;
+	text-indent: -999px;
+}
+#flashNavMovie {
+	position: absolute;
+/*	left: -3px;*/
+/*	top: -4px;*/
+	height:535px;
+	width:1000px;
+}
+#navDock{
+	display:none;
+}
+#navUtilityBackground {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/top-nav-eng-light.png) no-repeat left top;
+	height:25px;
+	position:absolute;
+	right:-2px;
+	top:0;
+	width:441px;
+	z-index:0;
+}
+.msie6 #navUtilityBackground {
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/global/top-nav-eng-light.png', sizingMethod='crop');
+}
+#navUtility {
+	float:right;
+	height:25px;	
+	margin-right: -2px;
+	position:relative;
+	width:441px;
+	z-index:8002;
+	display:inline;
+}
+#navUtility .korean,
+#navUtility .spanish,
+#navUtility .hyundai_global,
+#navUtility .follow_us,
+#navUtility .dealer_locator { 
+	float:left;
+	position:relative;
+}
+#navUtility .spanish {
+	display:none;
+}
+#navUtility .korean a.tab,
+#navUtility .spanish a.tab,
+#navUtility .hyundai_global a.tab,
+#navUtility .follow_us a.tab,
+#navUtility .dealer_locator a.tab {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/top-nav-eng-over.png) no-repeat 0 -25px;
+	display:block;
+	height:25px;
+	overflow:hidden;
+	text-indent:-5000px;
+}
+.msie6 #navUtility .korean a.tab,
+.msie6 #navUtility .spanish a.tab,
+.msie6 #navUtility .hyundai_global a.tab,
+.msie6 #navUtility .follow_us a.tab,
+.msie6 #navUtility .dealer_locator a.tab {
+	background-image:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/top-nav-eng-over-ie6.gif);
+}
+#navUtility .korean a.tab { width:42px; }
+#navUtility .spanish a.tab { width:82px; }
+#navUtility .hyundai_global a.tab { width:116px; }
+#navUtility .follow_us a.tab { width:176px; }
+#navUtility .dealer_locator a.tab { width:105px; }
+
+#navUtility .korean a:hover,
+#navUtility .korean a.down { background-position:1px 0; }
+#navUtility .spanish a:hover,
+#navUtility .spanish a.down { background-position:-46px 0; }
+#navUtility .hyundai_global a:hover,
+#navUtility .hyundai_global a.down { background-position:-42px 0; }
+#navUtility .follow_us a:hover,
+#navUtility .follow_us a.down { background-position:-158px 0; }
+#navUtility .dealer_locator a:hover,
+#navUtility .dealer_locator a.down { background-position:-334px 0; }
+
+#navUtility div.drop_down {
+	background:#fff;
+	display:none;
+	position:absolute;
+	right:-3px;
+	text-align:left;
+	top:25px;
+	z-index:9999;
+}
+
+#navUtility .dealer_locator div.drop_down {
+	right: 0px;
+	top:56px;
+}
+
+#navUtility div.drop_down ul li {
+	margin-bottom: 4px;
+}
+#navUtility div.drop_down ul li ul li {
+	margin-bottom: 0;
+}
+.msie6 #navUtility div.drop_down ul li {
+	display: inline-block;
+}
+#navUtility div.drop_down ul ul { 
+	display:none;
+	padding-bottom: 0;
+	background: none;
+}
+#navUtility .hyundai_global div.drop_down {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-bg.png) repeat-y 0 0;
+	padding:10px 7px 0 6px;
+	width:158px;
+}
+.msie6 #navUtility .hyundai_global div.drop_down {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-bg.gif) repeat-y 0 0;
+}
+#navUtility .hyundai_global div.drop_down ul {
+	padding-bottom: 10px;
+	background: transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-ul-bg.gif) repeat-x left bottom;
+}
+#navUtility .hyundai_global div.drop_down ul ul {
+	background:none;
+	padding-bottom:0;
+}
+#navUtility .hyundai_global div.drop_down li span {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-arrow-bg.jpg) no-repeat 0 1px;
+	color:#666;
+	cursor:pointer;
+	display:block;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-left:20px;
+}
+#navUtility .hyundai_global div.drop_down li span.on {
+	background-position:0 -14px;
+}
+#navUtility .hyundai_global div.drop_down ul ul li a {
+	color:#8D8D8D;
+	display:block;
+	font-size:9.5px;
+	font-weight:bold;
+	padding:3px 0 3px 20px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+#navUtility .hyundai_global div.drop_down ul ul li a:hover {
+	background:#769fbf url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-link-bg.png) repeat-x 0 0;
+	color:#fff;
+}
+#navUtility .hyundai_global_all {
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-button-bg.gif) repeat-x left bottom;
+	height:18px;
+	margin: 0;
+	padding:4px 7px 0 0;
+	text-align:right;
+	width:151px;
+}
+.msie6 #navUtility .hyundai_global_all {
+	margin: -4px 0 0 0;
+}
+#navUtility .hyundai_global_all a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #8B8B8B;
+	font-weight: bold;
+}
+#navUtility .hyundai_global_all a:hover {
+	color: #4c647e;
+}
+#navUtility .hyundai_global_bottom {
+	margin-bottom: -5px;
+	width:158px; height: 6px;
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-bottom-bg.png) repeat-x 0 0;
+	/*outline: 1px solid red;*/
+}
+.msie6 #navUtility .hyundai_global_bottom {
+	display: none;
+}
+
+
+/* Follow US */
+
+#navUtility .follow_us div.drop_down {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-bg.png) repeat-y 0 0;
+	padding:10px 7px 0 6px;
+	width:166px;
+}
+.msie6 #navUtility .follow_us div.drop_down {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-bg.gif) repeat-y 0 0;
+}
+/*#navUtility .follow_us div.drop_down ul {
+	padding-bottom: 10px;
+	background: transparent url(/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-ul-bg.gif) repeat-x left bottom;
+}*/
+#navUtility .follow_us div.drop_down ul ul {
+	background:none;
+	padding-bottom:0;
+}
+#navUtility .follow_us div.drop_down li span {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-arrow-bg.jpg) no-repeat 0 1px;
+	color:#666;
+	cursor:pointer;
+	display:block;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-left:20px;
+}
+#navUtility .follow_us div.drop_down li span.on {
+	background-position:0 -14px;
+}
+#navUtility .follow_us div.drop_down ul ul li a {
+	color:#8D8D8D;
+	display:block;
+	font-size:9.5px;
+	font-weight:bold;
+	padding:3px 0 3px 20px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+#navUtility .follow_us div.drop_down ul ul li a:hover {
+	background:#769fbf url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/language-tab-link-bg.png) repeat-x 0 0;
+	color:#fff;
+}
+
+/* 
+=============================================
+	MINI DEALER LOCATOR
+============================================= */
+#navUtility .dealer_locator div.drop_down {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/drop-down-background.png) repeat-y 0 0;
+	padding:0 4px;
+	width:365px;
+}
+.msie6 #navUtility .dealer_locator div.drop_down {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/drop-down-background.gif) repeat-y 0 0;
+}
+#navUtility .dealer_locator div.drop_down .bottom {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/drop-down-bottom.png) no-repeat 0 0;
+	bottom:-4px;
+	height:4px;
+	left:0;
+	position:absolute;
+#	width:335px;
+}
+.msie7 #navUtility .dealer_locator div.drop_down .bottom,
+.msie6 #navUtility .dealer_locator div.drop_down .bottom {
+	display:none;
+}
+
+.msie6 #miniDealerLocatorIframeShim {
+	border: 1px solid red;
+	display: block;
+	filter: alpha(opacity=0);
+	height: 475px;
+	left: 0pt;
+	margin-left: 3px;
+	position: absolute;
+	top: 32px;
+	width: 327px;
+	z-index: -1;
+}
+
+#miniDealerLocator.dealers-found .results .map_frame .map {
+	background:#99b3cc !important;
+}
+#miniDealerLocator.no-dealers-found .results .map_frame .map {
+	background-image:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/map-loading-error-background.gif);
+}
+#miniDealerLocator.searching .form .loader {
+	display:block;
+}
+#miniDealerLocator.no-dealers-found .results,
+#miniDealerLocator.searching .form a.locate,
+#miniDealerLocator.searching .results {
+	display:none;
+}
+
+#miniDealerLocator .form fieldset {
+	padding:5px 0 4px;
+	margin-left:10px;
+}
+#miniDealerLocator .form label {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/your-zipcode.gif) no-repeat left center;
+	float:left;
+	height:21px;
+	overflow:hidden;
+	text-indent:-5000px;
+	width:83px;
+}
+#miniDealerLocator .form input { 
+	float:left;
+	height:13px;
+	margin:1px 4px 0 0;
+	padding:3px;
+	width:134px;
+}
+#miniDealerLocator .form a.locate {
+	float:left;
+	font-size:11px;
+/*	font-size:9px;
+	letter-spacing:1px;*/
+}
+#miniDealerLocator .form .loader {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/loader-form.gif) no-repeat center center;
+	display:none;
+	float:left;
+	height:21px;
+	width:16px;
+}
+#miniDealerLocator .form a.close {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/close.gif) no-repeat center top;
+	display:block;
+	float:right;
+	height:19px;
+	overflow:hidden;
+	margin-top:2px;
+	text-indent:-5000px;
+	width:61px;
+}
+#miniDealerLocator .form a.close:hover {
+	background-position:center -19px;
+}
+#miniDealerLocator .form .error_summary {
+	margin:0;
+}
+
+/* Mini Dealer Locator results panels */
+#miniDealerLocator .no_results {
+	display:none;
+	padding:10px;
+}
+#miniDealerLocator .results {
+	background:#fcfbfc url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/results-background.png) repeat-x 0 0;
+	display:none;
+	padding-top:5px;
+}
+#miniDealerLocator .results a {
+	text-decoration:none;
+}
+#miniDealerLocator .results a:hover {
+	color:#618ec2 !important;
+}
+#miniDealerLocator .results .dealer_count {
+	color:#626262;
+	font-size:9px;
+	font-weight:bold;
+	height:20px;
+	line-height:20px;
+	padding:0 7px;
+	text-transform:uppercase;
+}
+#miniDealerLocator .results .note { 
+	font-style:italic;
+	font-weight:normal;
+}
+#miniDealerLocator .results .map_frame { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/map-frame-background.gif) no-repeat 0 0;
+	height:200px;
+	margin:0 auto 10px;
+	padding:4px;
+	width:345px;
+}
+#miniDealerLocator .results .map_frame .map {
+	background:#e1e1e1 url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/map-loading-background.gif) no-repeat center center;
+	height:200px;
+	width:345px;
+}
+#miniDealerLocator .results .dealers { 
+	height:190px;
+	margin:0 7px 10px 0;
+	overflow-y:scroll;
+	padding:0 0 13px 7px;
+	position:relative;
+}
+#miniDealerLocator .results .dealers li {
+	font-weight:bold;
+	margin:0 2px -10px 0;
+	padding-top:13px;
+	position:relative;
+	text-transform:uppercase;
+}
+.msie6 #miniDealerLocator .results .dealers li { zoom:1; }
+
+#miniDealerLocator .results .dealers li.hover {
+	cursor:pointer !important;
+}
+#miniDealerLocator .results .dealers li.selected {
+	background:#fcfbfc url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/selected-dealer-background.png) no-repeat left top;
+}
+#miniDealerLocator .results .dealers li.selected .dealer_info {
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/selected-dealer-background.png) no-repeat bottom right;
+}
+#miniDealerLocator .results .dealers li .dealer_info {
+	padding:0 0 13px 27px;
+	position:relative;
+	zoom:1;
+}
+#miniDealerLocator .results .dealers li .dealer_info .dealer_marker {
+	position:absolute;
+	left:0;
+	width:26px;
+	height: 28px;
+}
+#miniDealerLocator .results .dealers li .dealer_info .dealer_name {
+	color:#375C7E;
+	font-size:13px;
+	margin-bottom:4px;
+	overflow-x:hidden;
+	text-decoration:none;
+}
+#miniDealerLocator .results .dealers li .dealer_address {
+	color:#626262;
+	font-size:11px;
+	margin:0;
+	padding:0;
+}
+#miniDealerLocator .results .dealers li .dealer_languages {
+	display:block;
+	font-weight:normal;
+	padding:2px 0;
+}
+#miniDealerLocator .results .dealers li .dealer_info .dealer_links a {
+	font-size:10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-stretch: narrower;
+	line-height:11px;
+	margin-left:1px;
+}
+#miniDealerLocator .results .see_all_dealerships {
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/see-all-dealerships-background.png) repeat-x 0 0;
+	display:block;
+	font-size:11px;
+	height:22px;
+	line-height:22px !important;
+	padding-right:7px;
+	text-align:right;
+	width:359px;
+}
+.msie6 #miniDealerLocator .results .see_all_dealerships {
+	zoom:1;
+}
+
+/* Mini Dealer Locator info window */
+#HNMiniInfoWindow { 
+	height:122px; 
+	margin-left:-13px; 
+	width:220px; 
+}
+#HNMiniInfoWindow_t { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/t.png) repeat-x 0 0; 
+	height:10px; 
+	width:222px;
+}
+#HNMiniInfoWindow_r { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/r.png) repeat-y 0 0; 
+	height:61px; 
+	width:10px; 
+}
+#HNMiniInfoWindow_l { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/l.png) repeat-y 0 0; 
+	height:61px; 
+	width:10px; 
+}
+#HNMiniInfoWindow_b { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/b.png) repeat-x 0 0; 
+	height:10px; 
+	width:222px; 
+}
+#HNMiniInfoWindow_tl { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/tl.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNMiniInfoWindow_tr { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/tr.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNMiniInfoWindow_br { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/br.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNMiniInfoWindow_bl { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/bl.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNMiniInfoWindow_close { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/map/infowindow/close.png) no-repeat 0 0; 
+	cursor:pointer; 
+	height:24px; 
+	position:absolute; 
+	width:25px; 
+}
+#HNMiniInfoWindow_contents { 
+	background:#fff url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/contents.png) no-repeat center top; 
+	height:90px; 
+	width:200px;
+}
+#HNMiniInfoWindow_beak { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/mini/overlay/beak.png) no-repeat 0 0; 
+	height:22px; 
+	width:23px; 
+}
+#HNMiniInfoWindow .info_window { 
+	padding:0 10px;
+	text-transform:uppercase;
+}
+#HNMiniInfoWindow .info_window .dealer_name { 
+	color:#375C7E; 
+	font-size:10px; 
+	font-weight:bold; 
+	line-height:30px; 
+	margin-bottom:4px; 
+	padding:0; 
+}
+#HNMiniInfoWindow .info_window p { 
+	color:#626262; 
+	font-size:10px; 
+	font-weight:bold; 
+	line-height:1.15em;
+}
+#HNMiniInfoWindow .info_window p .dealer_languages { 
+	display:block;
+	font-weight:normal;
+	padding:2px 0;
+}
+.msie6 #HNMiniInfoWindow_tl    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/tl.png', sizingMethod='crop'); }
+.msie6 #HNMiniInfoWindow_t     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/t.png', sizingMethod='scale'); }
+.msie6 #HNMiniInfoWindow_tr    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/tr.png', sizingMethod='crop'); }
+.msie6 #HNMiniInfoWindow_r     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/r.png', sizingMethod='scale'); }
+.msie6 #HNMiniInfoWindow_br    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/br.png', sizingMethod='crop'); }
+.msie6 #HNMiniInfoWindow_b     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/b.png', sizingMethod='scale'); }
+.msie6 #HNMiniInfoWindow_bl    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/bl.png', sizingMethod='crop'); }
+.msie6 #HNMiniInfoWindow_l     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/l.png', sizingMethod='scale'); }
+.msie6 #HNMiniInfoWindow_beak  { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/mini/overlay/beak.png', sizingMethod='crop'); }
+
+/* Global Google Map Styles   */
+#HNInfoWindow { 
+	height:132px;
+	margin-left:-20px;
+	width:270px;
+}
+#HNInfoWindow_t { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/t.png) repeat-x 0 0; 
+	height:10px;
+}
+#HNInfoWindow_r { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/r.png) repeat-y 0 0; 
+	height:100px;
+	width:10px;
+}
+#HNInfoWindow_l { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/l.png) repeat-y 0 0; 
+	height:100px;
+	width:10px; 
+}
+#HNInfoWindow_b { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/b.png) no-repeat 0 0; 
+	height:10px; 
+}
+#HNInfoWindow_tl { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/tl.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNInfoWindow_tr { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/tr.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNInfoWindow_br { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/br.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNInfoWindow_bl { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/bl.png) no-repeat 0 0; 
+	height:10px; 
+	width:10px; 
+}
+#HNInfoWindow_close { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/close.png) no-repeat 0 0; 
+	cursor:pointer; 
+	height:24px; 
+	position:absolute; 
+	left:233px; 
+	top:12px !important; 
+	width:25px; 
+}
+#HNInfoWindow_contents { 
+	background:#fff url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/contents.png) no-repeat top center;
+	border:1px solid #a8a6a3;
+	height:100px;
+}
+#HNInfoWindow_beak { 
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/dealer-locator/main/overlay/beak.png) no-repeat 0 0;
+	height:22px;
+	position:absolute;
+	width:23px;
+	z-index:200;
+}
+#HNInfoWindow .info_window { 
+	padding:0 10px; 
+	text-transform:uppercase;
+}
+#HNInfoWindow .info_window .dealer_name { 
+	color:#375C7E; 
+	font-size:13px; 
+	font-weight:bold; 
+	line-height:30px; 
+	margin-bottom:5px;
+	padding:0;
+}
+#HNInfoWindow .info_window p { 
+	color:#626262; 
+	font-size:11px; 
+	font-weight:bold; 
+}
+#HNInfoWindow .info_window p .dealer_languages { 
+	display:block;
+	font-weight:normal;
+	padding:2px 0;
+}
+.msie6 #HNInfoWindow_tl    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/tl.png', sizingMethod='crop'); }
+.msie6 #HNInfoWindow_t     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/t.png', sizingMethod='scale'); }
+.msie6 #HNInfoWindow_tr    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/tr.png', sizingMethod='crop'); }
+.msie6 #HNInfoWindow_r     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/r.png', sizingMethod='scale'); }
+.msie6 #HNInfoWindow_br    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/br.png', sizingMethod='crop'); }
+.msie6 #HNInfoWindow_b     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/b.png', sizingMethod='scale'); }
+.msie6 #HNInfoWindow_bl    { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/bl.png', sizingMethod='crop'); }
+.msie6 #HNInfoWindow_l     { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/l.png', sizingMethod='scale'); }
+.msie6 #HNInfoWindow_beak  { background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/dealer-locator/main/overlay/beak.png', sizingMethod='crop'); }
+
+/* 
+=============================================
+			INNER MAP STYLES - Dealer Locator
+============================================= */
+.zoom_controls {
+	position: absolute;
+	top: 0; left: 0;
+	width: 26px;
+	color:#375C7E;
+	clear:left;
+}
+.zoom_controls a {
+	float: left;
+	width: 20px; height: 18px;
+	margin: 2px 0 3px;
+	cursor: pointer;
+}
+.zoom_controls a.zoom_in {	
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/map/map_sprite.png) -5px -6px no-repeat;
+}
+.zoom_controls a.zoom_out {	
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/map/map_sprite.png) -5px -56px no-repeat;
+}
+.zoom_controls a.zoom_in:hover {
+	background-position: -5px -32px !important;
+}
+.zoom_controls a.zoom_out:hover {
+	background-position: -5px -82px !important;
+}
+.map_type_controls {
+	position: absolute;
+	top: 0; right: 0;
+	color:#375C7E;
+	clear:left;
+}
+.map_type_controls a { 
+	float: left;
+	margin: 2px;
+	cursor: pointer;
+}
+.map_type_controls a.map_normal {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/map/map_sprite.png) -41px -6px no-repeat;
+	width: 32px; height: 17px;
+}
+.map_type_controls a.map_sat {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/map/map_sprite.png) -83px -6px no-repeat;
+	width: 59px; height: 17px;
+}
+.map_type_controls a.map_sat:hover {
+	background-position: -83px -28px !important;
+}
+.map_type_controls a.map_normal:hover {
+	background-position: -41px -28px !important;
+}
+
+
+
+/*#################################*/
+
+/* Right Column Content Navigation */
+ul#contentNavigation{	
+	font-weight: bold;
+	font-size: 11px;
+}
+ul#contentNavigation ul{
+	display:none;
+}
+ul#contentNavigation li{
+	padding: 10px 19px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/contentNavigation_divider.png) no-repeat;
+	zoom:1;	
+}
+ul#contentNavigation li.first{	
+	background: none;	
+}
+ul#contentNavigation li a{
+	text-transform:uppercase;
+	text-decoration: none;
+	color:#8b8b8b;
+}
+ul#contentNavigation li a:hover{	
+	color:#396290;
+}
+ul#contentNavigation li.section_on {
+	padding: 10px 19px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/contentNavigation_section.png) repeat-y;	
+}
+ul#contentNavigation li.section_on a{
+	color:#396290;
+	font-weight:bold;
+}
+ul#contentNavigation li.section_on ul{
+	display:block;
+}
+ul#contentNavigation li.section_on ul li{
+	padding: 5px 19px;
+	background: none;
+	font-size: 10px;
+}
+ul#contentNavigation li.section_on ul li a{		
+	color:#8b8b8b;
+	font-weight:normal;
+}
+ul#contentNavigation li.section_on ul li a:hover{	
+	color:#555555;
+}
+ul#contentNavigation li.section_on ul li.sub_section_on{		
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/contentNavigation_subsection.png) no-repeat 10px 9px;	
+}
+ul#contentNavigation li.section_on ul li.sub_section_on a{		
+	color:#555555;
+	font-weight:bold;
+}
+#contentNavigationArrow {
+	position: absolute;
+	top: 0;
+	left: -16px;
+	width: 16px;
+	padding: 0;	
+	display:none;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/contentNavigation_arrow.png) no-repeat;	
+}
+.msie6 #contentNavigationArrow { 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/global/contentNavigation_arrow.png', sizingMethod='crop'); 
+	background:none;
+}
+
+/* Right Content Sub Navigation */
+.content_sub_navigation{
+	position:relative;
+	clear:both;
+	padding: 18px 0 0;
+	width: 100%;
+}
+.content_sub_navigation .sub_head,
+#mainDealerLocator #altContent .sub_head{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	font-style:italic;
+	font-weight:bold;
+	color: #8e9093;
+	border-bottom: 1px solid #c0c0c0;
+	padding-bottom: 3px;	
+}
+.content_sub_navigation p{	
+	font-size: 11px;
+	font-style:italic;
+	font-weight:normal;
+	color: #333333;	
+	padding-top: 5px;		
+}
+.content_sub_navigation p.link_copy{	
+	font-size: 10px;
+	font-style:normal;	
+	padding-top: 0px;		
+}
+.content_sub_navigation ul{
+	padding: 5px 0;
+}
+.content_sub_navigation ul li{
+	padding: 1px 0;
+}
+.content_sub_navigation ul li img{
+	padding-left: 3px;
+}
+.content_sub_navigation ul li a:link, .content_sub_navigation ul li a:visited{
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:10px;
+	color: #375c7e;
+	text-transform:uppercase;
+}
+.content_sub_navigation ul li a:hover{	
+	color: #618EC2;
+}
+.content_sub_navigation_warranty{
+	position:relative;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/icon_best_warranty.png) no-repeat;
+	width: 188px;
+	height: 0;
+	padding-top: 68px;
+	display:block;
+	margin-top: 19px;
+	overflow:hidden;
+}
+/* 
+=============================================
+		GENERAL CONTENT STYLES
+============================================= */
+.global_disclaimer{
+	padding: 20px;	
+	font-size: 11px;
+	clear:both;	
+}
+.global_disclaimer p{
+	padding: 0;
+}
+
+.vehicle_disclaimer{
+	padding: 0px;	
+	font-size: 10px;	
+}
+.vehicle_disclaimer p{
+	padding: 0;
+}
+
+.seo_vehicle_content{
+	display:none;
+}
+a.content_button:link,
+a.content_button:visited,
+a.content_button_same_page:link,
+a.content_button_same_page:visited{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/buttons/button_bkgnd.png) repeat-x 0 0;	
+	border:1px solid #cacaca;
+	color:#fff;
+	display:block;
+	float:left;	
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:5px;
+/*	letter-spacing:0.5px;*/
+}
+a.content_button:hover {
+	background-position:0 -100px;	
+}
+a.content_button_same_page img,
+a.content_button img {
+	margin-left:3px;
+}
+a.content_button_same_page:link,
+a.content_button_same_page:visited{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/buttons/content_button_same_page.jpg) repeat-x 0 0;
+	color:#60748B !important;
+}
+a.content_link:link,
+a.content_link:visited {
+	color: #375c7e;
+	text-decoration:underline;
+	text-transform:uppercase;
+	font-weight:normal;	
+	display:inline;			
+}
+a.content_link:hover{
+	color: #618EC2;
+}
+a.content_link img{
+	margin-left: 5px;
+}
+a.content_link_chevron:link,a.content_link_chevron:visited{
+	color: #375c7e;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;	
+	display:inline;			
+}
+a.content_link_chevron:hover{
+	color: #618EC2;
+}
+a.content_link_chevron img{
+	margin-right: 5px;
+}
+
+.general_content_container{
+	clear:both;
+	display:block;
+}
+.general_content{	
+	padding:10px 20px;
+	clear:both;
+}
+.general_content:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+} 
+.general_content{display: inline-block;} 
+html[xmlns] .general_content{display: block;} 
+* html .general_content{height: 1%;}
+.read_more_content{
+	display:none;
+	overflow-y: auto;
+	zoom: 1;
+	margin-bottom: 10px;
+}
+.general_content .content_image{
+	position: relative;	
+	float: left;	
+}
+.general_content .content_image a{	
+	display:block;	
+}
+.general_content .content_image a{
+	display:block;	
+	position: relative;	
+	zoom: 1;	
+}
+.msie6 .general_content .content_image a{
+	display:inline;
+}
+.has_shadow{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/image_bgnd_btm.png) no-repeat right bottom;
+	padding:0 7px 7px 0;
+}
+.has_shadow .shadow{
+	display:block;
+	padding:7px 0 0 7px;
+	position:relative;
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/image_bgnd_top.png) no-repeat left top;
+}
+.has_shadow .shadow_left,
+.has_shadow .shadow_right{
+  display:block;
+  position:absolute;
+  width:7px;
+  height:7px;
+  font-size:0px;
+  z-index:999;
+}
+.has_shadow .shadow_left{
+  left:0;
+	bottom: 0;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/image_bgnd_left.png) no-repeat;
+}
+.has_shadow .shadow_right{
+	right: 0;
+	top:0;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/image_bgnd_right.png) no-repeat;
+}
+.general_content .content_image img{
+	display:block;
+}
+.general_content.image_left .content_image{
+	float: left;
+}
+.general_content.image_right .content_image{
+	float: right;
+}
+.imageBanner {
+	padding-top: 12px;
+}
+.general_content .content_copy{
+	display:block;
+	clear: both;
+	float: none;
+	padding: 10px 0;
+}
+.general_content.image_left .content_copy{
+	float: left;	
+	clear:none;
+	padding-left: 25px;
+}
+.general_content.image_right .content_copy{
+	float: left;
+	clear:none;	
+	padding-right: 25px;
+}
+.general_content.image_left.pp .content_copy{
+	width:345px;
+	float:left;
+	clear:none;
+	margin-left: 25px;
+	text-align: left;
+	color: #393834;
+	display:inline;
+}
+.general_content.image_right.pp .content_copy{
+	width:345px;
+	float:left;
+	clear:none;
+	margin-right: 25px;
+	text-align: left;
+	color: #393834;
+	display:inline;
+}
+.general_content .content_copy ul{
+	margin: 0px;
+	padding: 0px;	
+}
+.general_content .content_copy ul li{
+	list-style-type:none;
+	list-style-position:outside;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/list-marker-square.gif) no-repeat 0 5px;
+	padding-left: 10px;	
+}
+.general_content .content_copy .error_summary ul li{	
+	background: none;	
+}
+.general_content .content_copy ol{
+	margin-left: 0;
+	padding-left: 22px;
+}
+.general_content .content_copy ol li{
+	list-style-type:decimal;
+	list-style-position:outside;
+	display:list-item;
+	vertical-align:top;
+	margin: 10px 0;	
+}
+.general_content .content_copy ol li ul{
+	margin: 0px;
+	padding: 3px 0 0 0;	
+}
+.general_content .content_copy ol li ul li{
+	list-style-type:none;	
+	display:list-item;	
+	vertical-align:text-top;	
+	margin: 3px 0;	
+}
+.general_content .content_copy blockquote{
+	display:block;
+	margin: 5px 0 0 15px;
+}
+.general_content.video_block{
+	float:left;
+	clear: none;
+	width: 350px;
+	padding-right: 0px;
+}
+.general_content.video_block .content_image img, .general_content.video_content .content_image img{
+	width: 336px;
+	height: 189px;
+}
+.general_content.video_block .content_copy{	
+	padding-left: 7px;
+}
+.general_column_layout{
+	position:relative;
+	padding: 0 20px;			
+}
+.general_column_layout:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+} 
+.general_column_layout{display: inline-block;} 
+html[xmlns] .general_column_layout{display: block;} 
+* html .general_column_layout{height: 1%;}
+.general_column_layout.two_column .column1{	
+	position: relative;		
+	float: left;		
+}
+.general_column_layout.two_column .column2{	
+	position: relative;		
+	float: right;	
+}
+.general_column_layout.four_column .content_image img{
+	width: 162px;
+}
+.general_column_layout.four_column .column1{	
+	position: relative;	
+	width: 176px;
+	float: left;
+	margin-right: 10px;		
+}
+.general_column_layout.four_column .column2{	
+	position: relative;	
+	width: 176px;
+	float: left;
+	margin-right: 10px;			
+}
+.general_column_layout.four_column .column3{	
+	position: relative;	
+	width: 176px;
+	float: left;
+	margin-right: 10px;			
+}
+.general_column_layout.four_column .column4{	
+	position: relative;	
+	width: 176px;
+	float: left;		
+}
+.general_column_layout .general_content {
+	padding: 5px 0;
+}
+.general_column_layout .general_content .content_copy {
+	padding: 10px 20px 10px 7px;
+}
+/* Multi Content Box Styles */
+.multicontent_box{
+	background: #efefef;
+	border: 3px solid #FFF;
+	width: 726px;	
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/about/company_factory_offBkg.gif) no-repeat;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.multicontent_box .contentbox{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 535px;
+	display:none;
+}
+
+.multicontent_box .navigation_container{
+	float: left;
+	
+}
+.multicontent_box .navigation_container ul{
+	margin:0px; 
+	padding: 0px;
+	list-style-position:inside;
+	list-style:none;
+	border: 1px solid red;
+}
+.multicontent_box .navigation_container li{	
+	width: 151px;
+	display:block;
+	padding: 12px 25px 12px 10px;		
+	cursor: pointer;
+	margin: 0px;
+	min-height: 32px;
+}
+.msie6 .multicontent_box .navigation_container li{
+	height: 36px;
+}
+.multicontent_box .navigation_container li a{
+	letter-spacing: -0.3;	
+	color: #4c647e;	
+	background-color: transparent;	
+	text-transform: uppercase;	
+	font-size: 12px;	
+	font-weight: normal;
+}
+.multicontent_box .navigation_container li.active{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/about/company_factory_onBkg.gif) no-repeat;	
+}
+.multicontent_box .navigation_container li.line{
+	height: 1px;
+	width: 160px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/about/company_factory_seperator.png);
+	padding: 0px;
+	margin: 0px;
+	line-height: 0px;
+	font-size: 0px;
+	min-height: 0px;
+}
+.msie6 .multicontent_box .navigation_container li.line{
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/about/company_factory_seperator.png', sizingMethod='crop');
+}
+.multicontent_box .content_container{
+	position: relative;
+	float: left;
+	width: 540px;
+	font-size: 12px;
+	height: 100%;
+}
+.multicontent_box .content_container P{
+	padding-top: 10px;
+	width: 220px;
+}
+
+.multicontent_box1{
+	background: #efefef;
+	border: 3px solid #FFF;
+	width: 726px;	
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/about/company_factory_offBkg.gif) no-repeat;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.multicontent_box1 .contentbox{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 535px;
+	display:none;
+}
+
+.multicontent_box1 .navigation_container1{
+	float: left;
+	
+}
+.multicontent_box1 .navigation_container1 ul{
+	margin:0px; 
+	padding: 0px;
+	list-style-position:inside;
+	list-style:none;
+	border: 1px solid red;
+}
+.multicontent_box1 .navigation_container1 li{	
+	width: 151px;
+	display:block;
+	padding: 12px 25px 12px 10px;		
+	cursor: pointer;
+	margin: 0px;
+	min-height: 32px;
+}
+.msie6 .multicontent_box1 .navigation_container1 li{
+	height: 36px;
+}
+.multicontent_box1 .navigation_container1 li a{
+	letter-spacing: -0.3;	
+	color: #4c647e;	
+	background-color: transparent;	
+	text-transform: uppercase;	
+	font-size: 13px;	
+	font-weight: normal;
+}
+.multicontent_box1 .navigation_container1 li.active{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/about/company_factory_onBkg.gif) no-repeat;	
+}
+.multicontent_box1 .navigation_container1 li.line{
+	height: 1px;
+	width: 160px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/about/company_factory_seperator.png);
+	padding: 0px;
+	margin: 0px;
+	line-height: 0px;
+	font-size: 0px;
+	min-height: 0px;
+}
+.msie6 .multicontent_box1 .navigation_container1 li.line{
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/about/company_factory_seperator.png', sizingMethod='crop');
+}
+.multicontent_box1 .content_container1 {
+	position: relative;
+	float: left;
+	width: 540px;
+	font-size: 12px;
+	height: 100%;
+}
+.multicontent_box1 .content_container1 P{
+	padding-top: 10px;
+	width: 220px;
+}
+
+/*
+	Pagination Styles
+*/
+#global_pagination {
+	margin: 20px 0px 0px 20px;
+}
+#global_pagination span
+{
+}
+
+#global_pagination a
+{
+	float: left;
+	margin-right: 3px;
+}
+
+#global_pagination .number 
+{
+	text-align: center;
+	margin-right: 1px;
+}
+
+#global_pagination a,
+#global_pagination span span {
+	background-image:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/pagination.png);
+	background-repeat: no-repeat;
+	padding-top: 28px;
+	height: 0px;
+	float: left;
+	overflow: hidden;
+	text-decoration:none;
+	outline:none;
+}
+#global_pagination a.prev {
+	background-position: 0px 0px;
+	width: 55px;
+}
+#global_pagination a.prev:hover {
+	background-position: 0px -28px;
+}
+#global_pagination a.prev[disabled], #global_pagination a.prev:hover[disabled] {
+	cursor: default;
+	background-position: 0px -56px;
+}
+#global_pagination a.next {
+	width: 55px;
+	background-position: -55px 0px;
+}
+#global_pagination a.next:hover {
+	background-position: -55px -28px;
+}
+#global_pagination a.next[disabled], #global_pagination a.next:hover[disabled] {
+	cursor: default;
+	background-position: -55px -56px;
+}
+#global_pagination .number, 
+#global_pagination .current_number {	
+	font-size: 11px;
+	font-weight: bold;
+	color: #5D7E9B;
+	overflow: auto;
+	padding-top: 6px;
+	height: 22px;
+	width: 28px;
+	background-position: -110px 0px;
+}
+#global_pagination span.current_number {
+	cursor: default;
+	text-align:center;
+}
+#global_pagination .number:hover, 
+#global_pagination .current_number {
+	background-position: -110px -28px;
+	color: #FFFFFF;	
+}
+
+
+.special_offers{
+	position:relative;
+	display:block;
+	background: #f3f3dc url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/icon_special_offer.png) no-repeat 3px 10px;
+	margin-bottom: 15px;
+	padding: 13px 10px 12px 26px;
+	border:1px solid #DCDCDC;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size: 11px;
+}
+.special_offers a.offer_title,
+.special_offers span.offer_title{
+	display:block;
+	color: #cc6600;
+	font-weight:bold;
+}
+.special_offers p {
+	color: #4a4a4a;
+	padding-bottom: 5px;
+}
+.special_offers a:link, .special_offers a:visited, .special_offers a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	color: #375c7e;
+}
+.special_offers a img {
+	padding-left: 3px;
+}
+
+/* Image Hover */
+span.image_hover_bgnd{
+	display: block;
+	position:relative;
+	border: 5px solid red;
+}
+span.image_hover_bgnd img{
+	margin: -5px;
+}
+span.video_icon{
+	position:absolute;	
+	display: block;
+	left: 0px;
+	bottom: 0px;
+	width: 24px;
+	height: 22px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/buttons/pp_sprite.jpg) no-repeat -68px -102px;
+	cursor:pointer;	
+}
+.button_print a, .button_email a, .button_ebrochure a {
+	float: left;
+	height: 0;
+	overflow: hidden;
+	padding-top: 14px;
+}
+.button_print a {
+	width: 125px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/buttons/button-print.png) 0px -14px no-repeat;
+}
+.button_email,
+.content_email {
+	/* Email is disabled at the moment */
+	display: none !important;
+}
+.button_email a {
+	width: 40px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/buttons/button-email.png) 0px -20px no-repeat;
+}
+.button_ebrochure a {
+	width: 105px;
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/buttons/button-ebrochure.png) 0px -14px no-repeat;
+}
+.button_print a:hover, .button_email a:hover, .button_ebrochure a:hover {
+	background-position: 0px 0px;
+}
+/* Standard / Optional / Not Available / Advantages Icons */
+.specs_trim_icon_standard{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/specs-icon-standard.png) no-repeat 0 0;
+	width: 17px;
+	height: 15px;
+	text-indent: -1000px;
+	overflow:hidden;
+	margin: 0 auto;
+}
+.specs_trim_icon_optional{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/specs-icon-optional.png) no-repeat 0 0;
+	width: 18px;
+	height: 15px;
+	text-indent: -1000px;
+	overflow:hidden;
+	margin: 0 auto;
+}
+.specs_trim_icon_na{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/specs-icon-na.png) no-repeat 0 0;
+	width: 21px;
+	height: 15px;
+	text-indent: -1000px;
+	overflow:hidden;
+	margin: 0 auto;
+}
+.specs_trim_icon_differences{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/specs-icon-differences.png) no-repeat 0 0;
+
+
+	width: 18px;
+	height: 15px;
+	text-indent: -1000px;
+	overflow:hidden;
+	margin: 0 auto;
+}
+.specs_trim_icon_advantages{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/icons/compare-icon-advantages.png) no-repeat 0 0;
+	width: 124px;
+	height: 17px;
+	text-indent: -1000px;
+	overflow:hidden;
+	margin: 0 auto;
+}
+#specsInfo {
+	overflow-y:auto;
+	padding:0 20px 20px; 
+	zoom:1;
+}
+#specsInfo .specs_trim_icon_standard, #specsInfo .specs_trim_icon_optional, #specsInfo .specs_trim_icon_na, #specsInfo .specs_trim_icon_differences, #specsInfo .specs_trim_icon_advantages{
+	margin: 0;	
+	float: left;
+}
+#specsInfo .specs_trim_icon_standard{
+	width: 73px;
+}
+#specsInfo .specs_trim_icon_optional{
+	width: 71px;
+}
+#specsInfo .specs_trim_icon_na{
+	width: 93px;
+}
+#specsInfo .specs_trim_icon_differences{
+	width: 117px;
+}
+#specsInfo .specs_trim_icon_advantages{
+	width: 124px;
+}
+#specsInfo .specs_legend{
+	float: left;
+}	
+#specsInfo .specs_differences{
+	float: right;
+	width: 300px;
+}
+#specsInfo .specs_differences .button_differences{
+	float: right;
+	font-size: 11px;
+}
+/* 
+=============================================
+	UTILITY PAGES (Privacy Policy, Terms of Use, Warranty, Help/FAQ)
+============================================= */
+.utility_page #bodyContent p, 
+.utility_page #bodyContent ul {
+	font-size: 13px;
+	line-height: 1.3em;
+}
+.utility_page #bodyContent ul {
+	margin-left: 20px;
+}
+.utility_page #bodyContent ul.error_summary {
+	margin-left: 0;
+}
+	.utility_page #bodyContent ul li {
+		list-style-type: disc;
+		list-style-position: outside;
+	}
+.utility_page #bodyContent h2 {
+	margin-top: 20px;
+	color: #4C647E; 
+	text-transform: uppercase; 
+	font-size: 16px;
+	font-weight:bold;
+}
+.utility_page #altContent .special_offers {
+	margin-top: 10px;
+}
+.utility_page .content_sub_navigation {
+	padding-top: 0;
+}
+/* 
+=============================================
+			CONTACT PAGE STYLES
+============================================= */
+
+.contact_page #altContent .special_offers {
+	margin-top: 10px;
+}
+.contact_page .content_sub_navigation {
+	padding-top: 0;
+}
+.contact_form,
+.contact_form select,
+.contact_form label,
+.contact_form input,
+.contact_form textarea,
+.contact_form a
+{
+	float: left;
+	clear: left;	
+}
+.contact_form a{
+	white-space:nowrap;
+}
+.contact_form label {
+	visibility: visible;
+	color: #8b8b8b;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight:bold;
+}
+.contact_page #bodyContent p,
+.contact_page #bodyContent address {
+	font-size: 13px;
+	line-height: 1.3em;	
+}
+.contact_page .contact_form,
+.contact_page .contact_methods {
+	padding-top: 20px;
+}
+.contact_page #bodyContent h2 {
+	margin-bottom: 10px;
+	color: #4C647E; 
+	text-transform: uppercase; 
+	font-size: 16px;
+	font-weight:bold;
+}
+.contact_page .contact_form {
+	float: left;
+	width: 410px;
+	padding-right: 10px;
+}
+.contact_page .contact_methods {
+	float: left;
+	width: 260px; height: 440px;
+	padding-left: 40px;
+	background: transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/contact_bg.jpg) no-repeat left top;
+}
+.contact_page #bodyContent .contact_methods p {
+	font-weight: bold;
+	font-size: 11px;
+}
+/* Form styles */
+.contact_form label {
+	width: 95%;
+}
+.contact_form textarea {
+	height: 100px;
+	width: 380px;
+}
+
+.contact_form .contact_VIN_Number {
+	width: 150px;
+}
+
+.contact_form .contact_last_name {
+	width: 150px;
+}
+
+.contact_form .contact_first_name,
+.contact_form .contact_email {
+	width: 150px;
+	margin-right: 10px;
+}
+.contact_form .contact_last_name {
+	width: 208px;
+}
+.contact_form .contact_phone1 {
+	width: 28px;
+	display: inline-block; clear: none;
+}
+.contact_form .contact_phone2 {
+	width: 28px;
+	clear: none;
+	margin-left: 4px;
+}
+.contact_form .form div {
+	width: 160px;
+	float: left; clear: left;
+}
+.contact_form .form .error_summary {
+	width:auto;
+	float:none;
+	clear:both;
+}
+.contact_form .contact_phone3 {
+	width: 46px;
+	clear: none;
+	margin-left: 4px;
+}
+.contact_form .contact_phone4 {
+	width: 54px;
+}
+.contact_form label {
+	font-size: 11px;	
+}
+.contact_form input, .contact_form select, .contact_form textarea {
+	margin-bottom: 15px;
+}
+.msie6 .contact_form td, .msie7 .contact_form td {
+	padding-bottom: 15px;
+}
+/* 
+=============================================
+			SITEMAP STYLES
+============================================= */
+.page_intro {	
+	font-size: 12px;
+	padding: 20px 0 10px 0;
+}
+.sitemap_row {
+	float: left; clear: left;
+	border-top: 1px solid #dfe3e8;
+}
+.msie .sitemap_row {
+	width: 940px;
+}
+.sitemap h2 {
+	margin-top: 20px;
+	float: left; clear: left;
+}
+.sitemap_row div {
+	float: left;
+	width: 168px;
+	border-top: 1px solid #f9f9f9;
+	padding: 20px 0 10px 20px;
+	background: transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/sitemap_tile_bg.gif) no-repeat right top;
+	min-height: 120px;
+}
+.sitemap_row div a {
+	font-size:10px;
+	font-weight:normal;
+	color: #6588AD;
+	text-transform: uppercase;
+	text-decoration: none !important; /* ie6 needed important */
+}
+.sitemap_row div h3 a{
+	font-size: 16px;
+}
+.sitemap_row div a:hover {
+	color: #4c647e;
+}
+.msie6 .sitemap_row div  { /* min-height ie6 hack */
+	height:auto !important;
+	height:120px;
+}
+.sitemap_row div li {
+	float: left; clear:left;
+	line-height: 15px;
+	margin: 5px 0 0 0;
+}
+.msie .sitemap_row div li {
+	width: 100%;
+	float: left;
+}
+.sitemap_row div li img {
+	margin-left: 3px;
+}
+.sitemap_row div.last {
+	background: none;
+	min-height: 0;
+}
+
+/* 
+=============================================
+			HELP/FAQ STYLES
+============================================= */
+.faq-section {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/faq_break.gif) no-repeat top center;
+	display: block;
+	overflow-y:auto;
+	padding: 10px 0px 20px;
+	width: 720px;
+}
+.faq-section ul {
+	margin: 8px 0px 0px -8px !important;
+	list-style-type: none;
+	display: block;
+}
+.faq-section ul li {
+	position: relative;
+	border: 1px solid #ededed; /* Getting ready to put the border in */
+	margin: 0px 0px 4px 0px;
+	padding: 5px 48px 0px 4px;
+	list-style-type: none !important;
+}
+.msie6 .faq-section ul li,
+.msie7 .faq-section ul li{
+	display: inline-block;
+}
+
+.faq-section ul li .close {
+	display: none;
+	position: absolute;
+	height: 17px;
+	width: 18px;
+	cursor: pointer;
+	top: 8px;
+	right: 9px;
+	background-color: transparent;
+	background-image: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/icon-close-small.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.faq-section ul li .close.hover {
+	background-position: 0 -17px;
+}
+/* Questions */
+.faq-section ul .question {
+	padding: 2px 0px 3px 27px;
+	background-color: transparent;
+	background-image: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/faq_question_bug2.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.faq-section ul .selected .question {
+	background-position: 0 -40px;
+}
+/* Question Link */
+.faq-section ul li .question a {
+	color: #6588AD;
+	text-decoration: none;
+	font-size: 13px;
+}
+.faq-section ul li .question a:hover {
+	text-decoration: underline;
+}
+/* Question Selected */
+.faq-section ul li.selected .close {
+	display: block;
+}
+.faq-section ul li.selected {
+	border: 1px solid #D6DBE1;
+	background-color: #FFFFFF;
+	margin: 0px 0px 4px 0px;
+}
+.faq-section ul li.selected .question a {
+	color: #2A3D51;
+	text-decoration: none;
+}
+.faq-section ul li.selected .question a:hover {
+	color: #2A3D51;
+	text-decoration: underline;
+}
+/* Question - Answer */
+.faq-section ul li .answer {
+	width: 593px;
+	color: #626262;
+	margin: 0px 0px 6px 0px;
+	/*display: none;*/
+	line-height: 1.36363636;
+}
+.faq-section ul li .answer p {
+	padding: 5px 0px 12px 28px;
+	line-height: 1.7em;
+	font-size: 13px !important;
+}
+.faq-section .content_button {
+	margin-top: 10px;
+}
+
+/* 
+=============================================
+			LARGE FLASH PAGE STYLE
+============================================= */
+.large_flash_page #title{
+	margin-top: 92px;
+}
+.msie6 .large_flash_page #title{
+	margin-top: 105px;
+}
+.large_flash_page h1{
+	display:none;
+}
+.large_flash_page #mainContent{
+	overflow: visible;
+	/*height: 1158px;*/
+}
+
+.large_flash_page #pageFlash {
+	position: absolute; 	
+/*	top: -52px;*/
+	top: 0px;
+	width: 1000px;	
+	height: 1210px;	
+}
+.large_flash_page .content_sub_navigation {
+	padding: 0;
+}
+.large_flash_page .sidebar_btn {
+	display: block;
+	padding-bottom: 40px;
+}
+.large_flash_page #bodyContent {	
+	font-size:13px;
+	line-height:1.3em;
+	padding-top: 1120px;	
+}
+.large_flash_page #bodyContent .global_disclaimer{
+	padding: 40px 0 0;
+}
+.large_flash_page #wrapper {
+	/*margin-top: 50px;*/
+}
+.large_flash_page #altContent {
+	background: none;
+	padding-bottom: none;	
+	position:absolute;
+	top: 625px;
+	left: 770px;
+	z-index:2000;
+}
+.byo #altContentBtm, .byo #altContent{
+	display:none;
+}
+.byo #pageFlash {
+	position: absolute; 	
+	width: 1000px;
+	height: 2000px !important;
+	top: 0;
+}
+.byo #title{
+	margin-top:-30px;
+}
+.msie6 .byo #title{
+	margin-top:60px;
+}
+.byo #bodyContent{
+	width: 994px;
+}
+.byo #bodyContent .global_disclaimer{
+	display:none;
+	padding: 20px 0;
+	position:absolute;
+	top:0;
+	left: 10px;
+	z-index: 3000;
+}
+.byo #content{
+	background: none;
+}
+.byo #mainContent{
+	background: none;
+	overflow:hidden;
+	height: 1200px;	
+}
+/* 
+=============================================
+			EMAIL UPDATES
+============================================= */
+/* Email Updates 1 */
+#emailUpdates1 label, #emailUpdates1 input, #emailUpdates1 .content_button {
+	float: left; clear: left;
+}
+#emailUpdates1 label {
+	width: 200px;
+	margin-top: 10px;
+	color: #8b8b8b;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight:bold;
+}
+#emailUpdates1 .content_button {
+	margin-top: 10px;
+}
+/* Email Unsubscribe */
+#emailUnsub label, #emailUnsub input, #emailUnsub .content_button {
+	float: left; clear: left;
+}
+#emailUnsub label {
+	width: 200px;
+	margin-top: 10px;
+	color: #8b8b8b;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight:bold;
+}
+#emailUnsub .content_button {
+	margin-top: 10px;
+}
+/* Email Updates 2 (Full form) */
+#emailUpdates2 {
+	/*background: red;*/
+}
+#emailUpdates2 table {	
+	width: 570px;
+	margin-top: 10px;
+}
+#emailUpdates2,
+#emailUpdates2 table label,
+#emailUpdates2 table input {
+	float: left;
+	clear: left;
+}
+#emailUpdates2 table label{
+	float: left;
+	clear: left;
+	color: #8b8b8b;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight:bold;
+}
+#emailUpdates2 textarea {
+	height: 100px;
+	width: 380px;
+}
+#emailUpdates2 .email_updates_first_name,
+#emailUpdates2 .email_updates_email,
+#emailUpdates2 .email_updates_zip {
+	width: 150px;
+	margin-right: 10px;
+}
+#emailUpdates2 .email_updates_last_name {
+	width: 208px;
+}
+#emailUpdates2 input.email_updates_phone1 {
+	width: 28px;
+	display: inline-block; clear: none;
+}
+#emailUpdates2 .email_updates_phone2 {
+	width: 28px;
+	clear: none;
+	margin-left: 4px;
+}
+#emailUpdates2 table div {
+	width: 160px;
+	float: left; clear: left;	
+}
+#emailUpdates2 .email_updates_phone3 {
+	width: 46px;
+	clear: none;
+	margin-left: 4px;
+}
+#emailUpdates2 .email_updates_phone4 {
+	width: 44px;
+}
+#emailUpdates2 label {
+	font-size: 14px;	
+}
+#emailUpdates2 input, #emailUpdates2 select, #emailUpdates2 textarea {
+	margin-bottom: 15px;
+}
+.msie6 #emailUpdates2 td, .msie7 #emailUpdates2 td {
+	padding-bottom: 15px;
+}
+#newsletters {
+	margin-top: 15px;
+}
+.newsletter_option, 
+.newsletter_general_option {
+	clear: both;	
+	overflow-y:auto;
+	zoom:1;	
+}
+.newsletter_general_option{
+	padding-top: 5px;
+}
+.newsletter_option input,
+.newsletter_general_option input {	
+	display:inline;
+	float:left;
+	margin:0 !important;
+	padding:0;
+	width:auto;		
+}
+.newsletter_option label,
+.newsletter_general_option label {
+	float: left; 
+	clear: none;	
+	padding-left: 5px;
+	width: 540px;	
+}
+.newsletter_option label.hover,
+.newsletter_general_option label.hover {
+	cursor: pointer;	
+}
+.newsletter_option label span.option_description,
+.newsletter_general_option label span.option_description{
+	display:block;
+	color: #8E9093;
+	font-size: 12px;	
+	padding: 0 0 15px 0;	
+}
+#emailUpdates2 .content_button {
+	float: left; clear: left;
+	margin:10px 0 0 0;
+}
+p#newsletters_unsubrcribe {
+	float: left; clear: left;
+	margin:20px 0 0 0;
+	width: 100%; /* For IE */
+}
+
+
+
+
+
+
+/* 
+=============================================
+			SEARCH LANDING
+============================================= */
+.search{}
+
+.utility_page #bodyContent.search UL LI{
+	list-style-type: none;
+}
+
+.search .search_bar {
+	clear: both;
+}
+
+.search .search_bar .searchBox{
+	float: left;
+	height: 22px;
+	width: 283px;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/search/search_box_bg.jpg) no-repeat;
+	border: 0px;
+	text-indent: 25px;
+	line-height: 16px;
+	padding: 6px;
+	color: #FFF;	
+}
+
+.utility_page #bodyContent.search .search_bar UL{
+	clear: both;
+	margin: 10px 0 0;
+}
+
+.search .search_bar LI{
+	display: block;
+	float: left;
+	padding: 0 4px;
+	color: #636363;
+	text-transform:uppercase;
+	
+}
+
+.search .search_bar LI A:LINK, .search .search_bar LI A:VISITED, .search .search_bar LI A:HOVER, .search .search_bar LI A:ACTIVE{
+	color: #636363;
+	text-transform:uppercase;
+	margin: 4px 10px 6px;	
+}
+
+.search .search_bar LI.active A:LINK, .search .search_bar LI.active A:VISITED, .search .search_bar LI.active A:HOVER, .search .search_bar LI.active A:ACTIVE{
+	color: #FFFFFF;
+}
+
+.search .search_bar LI.first{
+	margin-left: 0;
+}
+
+.search .search_bar LI.active{
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/search/search_active_result.gif) no-repeat;
+	background-position: center;
+	color: #FFF;
+	height: 31px;
+}
+
+.search .search_bar LI.spacer{
+	
+	width: 1px;
+	overflow: hidden;
+	margin: 0 4px;
+}
+
+.search .search_bar .searchBtn{
+	margin-right: 25px;
+}
+
+.search .search_bar .searchCount{
+	padding-top: 5px;
+}
+
+.search .result_header{
+	margin-bottom: 20px;
+	color: #808080;
+	font-style:italic;
+}
+
+.search #search_vehicles .subheadline{
+	font-size: 14px;
+	color: #636363;
+}
+
+.search #search_vehicles .price{
+	font-style: italic;
+	font-size: 20px;
+	font-weight:bold;
+	color: #4c647e;
+}
+
+.search #search_vehicles .price .monthly{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.search #search_photos LI{
+	width: 137px;
+	display:block;
+	float: left;
+}
+
+.search #search_photos H3{
+	margin-top: 10px;
+}
+
+.search #search_vehicles IMG{
+	float: left;
+}
+
+.search #search_articles IMG.has_shadow{
+	margin-right: 10px;
+}
+
+.search #search_articles .search_header{
+	font-size: 16px;
+	text-transform:uppercase;
+	color: #4C647E;
+	font-weight:normal;
+}
+
+.search #search_articles .search_view_page{
+	font-size: 11px;
+	text-transform:uppercase;
+	color: #4C647E;	
+	padding: 0px;
+	margin: 0px;
+}
+
+/* 
+=============================================
+			FOOTER
+============================================= */
+#footerNav {
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+	text-align: left;	
+	font-weight:bold;
+}
+.upgrade_flash_page #footerNav{
+	display:none;
+}
+#footerNav a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#footerNav ul {
+	width: 100%;
+}
+#footerNav ul li { /* The main container for each list */
+	float: left;
+	width: 155px;
+	background: transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/footer_bgnd_hover.gif) no-repeat 0 -200px;
+	height: 165px;
+	overflow-y:auto;
+	padding: 25px 30px 0 30px;
+	margin: 0 -22px 0 0; /* Makes them overlap */
+	color:#616161; /* List headings */
+	text-transform: uppercase;
+}
+#footerNav ul li a {
+	color: #808080;
+	font-size: 10px; 
+	line-height: 10px;
+	padding-right: 10px;
+/*	background: transparent url(/web/20110307001607im_/http://www.hyundaiusa.com/images/global/icon_arrow.gif) no-repeat right -11px;*/
+}
+#footerNav ul li.hover { /* Hover over the list wrappers */
+	background-position: 0 0;
+}
+#footerNav ul li.hover a {
+	color: #39516D;
+/*	background: transparent url(/web/20110307001607im_/http://www.hyundaiusa.com/images/global/icon_arrow.gif) no-repeat right -51px;*/
+}
+#footerNav ul li ul {
+	margin: 12px 0 0 0;
+	padding: 0;
+}
+#footerNav ul li ul li {
+	background: none;
+	padding: 0; margin: 0;
+	height: auto;
+	overflow: visible;
+}
+#footerNav ul li.hover a:hover {
+	color: #618ec2;
+/*	background: transparent url(/web/20110307001607im_/http://www.hyundaiusa.com/images/global/icon_arrow.gif) no-repeat right -71px;*/
+}
+#footerLogo {
+	display: block; clear: left;
+	width: 900px;
+	margin: 0 auto;
+	border-top: 1px solid #e5e5e5;
+	padding: 22px 0 8px 0;
+}
+#footerSubNav {
+	display: block; clear: left;
+	width: 900px;
+	margin: 0 auto;
+	font-family:Georgia,"Times New Roman",Times,serif;
+}
+.upgrade_flash_page #footerSubNav{
+	display:none;
+}
+#footerSubNav li {
+	display: inline;
+	line-height: 18px;
+}
+#footerSubNav li a {
+	padding: 0 10px 0 10px;
+	border-right: 1px solid #CDCDCD;
+	text-decoration: none;
+	font-size: 11px;
+}
+#footerSubNav li a:hover {
+	text-decoration: underline;
+}
+#footerSubNav li.last a {
+	border: 0;
+	padding-right: 0;
+}
+#footerCopy {
+	clear:both;
+	color:#999999;
+	display:block;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:11px;
+	overflow-y:auto;
+	padding-top:4px;
+}
+
+/*
+=============================================
+			Modal Styles
+============================================= */
+.content_modal{
+	display:none;
+	position:absolute;
+	z-index:10000;
+}
+.content_modal .content_modalInner{
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_top.png) no-repeat left top;	
+	overflow:visible;
+	padding: 4px 0 0 4px;
+	position:relative;
+	margin-right: 4px;	
+}
+.content_modal .content_modalInner .content_modalContent{
+	overflow:visible;
+	position:relative;
+	z-index:2;
+	background: #ebebeb;	
+	border: 2px solid #fff;
+}
+.content_modalBottom{
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_bottom.png) no-repeat right bottom;
+	top:4px;
+	left: 4px;
+	height:100%;
+	position:absolute;
+	right:0;
+	width:100%;
+	z-index:1;	
+}
+.content_modalClear{
+	clear: both;	
+}
+.content_modalTopRight{
+	position:absolute;
+	top: 0;
+	right: 0;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_tr.png) no-repeat;
+	width: 4px;
+	height: 4px;		
+}
+.content_modalBottomLeft{
+	position:absolute;
+	bottom: -4px;
+	left: 0;
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_bl.png) no-repeat;
+	width: 4px;
+	height: 4px;		
+}
+.content_modalPointer {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-pointer.png) no-repeat;	
+    position:absolute;
+    left: 20px;
+	bottom: -17px;
+	width: 30px;
+	height: 17px ;
+	z-index: 999;
+	zoom:1;
+}
+.content_modal a.content_modalClose {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-close-bg.jpg) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 29px;
+	line-height: 27px;
+	height: 27px;
+	font-size: 14px;
+	text-indent: -10000px;
+	z-index:4000;
+
+}
+.content_modal a.content_modalClose:hover {
+	background-position: 0px -27px;
+}
+
+.msie6 div.content_modalInner {background: none;}
+.msie6 div.content_modalBottom {display:none;}
+.msie6 div.content_modalTopRight {display:none;}
+.msie6 div.content_modalBottomLeft {display:none;}
+.msie6 div.content_modalPointer {background: none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/modal/modal-pointer-ie6.png', sizingMethod='crop'); }
+
+
+#modalToEnglishSite,
+#modalEmail {
+	height: 0;
+	overflow: hidden;
+	text-align: left;
+}
+#modalEmail fieldset {
+	overflow-y: auto;
+	zoom: 1;
+}
+#modalEmail label {
+	display:block;
+	width: 55px;
+}
+#modalEmail input {
+	float: left;
+	margin-right: 10px;
+}
+#modal #modalToEnglishSite,
+#modal #modalEmail {
+	height: auto;
+	overflow: visible;
+	padding: 35px 25px;
+}
+#modal #modalToEnglishSite {
+	width: 200px;
+}
+#modal #modalToEnglishSite div {
+	overflow-y: auto;
+	zoom: 1;
+}
+#modal #modalToEnglishSite h3 {
+	margin-bottom: 10px;
+}
+#modal #modalToEnglishSite a {
+	float: left;
+	margin-right: 10px;
+}
+
+
+/* Global External Site Tool Tip */
+#globalToolTip div{
+	display:none;
+}
+span.external_url{
+	padding-top: 3px;
+	font-weight:bold;
+	display:block;
+	color: #375C7E;
+	width: 175px;
+	overflow:hidden !important;
+}
+.modal {
+	display:none;
+	position:absolute;
+	z-index:10000;
+}
+.modal .bottom { 
+	position: relative;
+	z-index: 1000 !important;
+}
+.modal .content {
+    background:#ebebeb; 
+    border:2px solid #fff;
+    position:relative;
+    z-index: 0 !important;
+	-moz-box-shadow: 3px 3px 1px #888, 3px 3px 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 3px 3px 1px #888, 3px 3px 10px rgba(0,0,0,0.4);
+}
+.msie .modal .content, {
+	-ms-filter: progid:DXImageTransform.Microsoft.Shadow(color=#888888,direction=135,strength=6);
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#888888,direction=135,strength=6);
+}
+.modal .pointer {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-pointer.png) no-repeat;	
+    position:absolute;
+    left: 20px;
+	width: 30px;
+	height: 17px ;
+	z-index: 999;
+	zoom:1;
+}
+.msie6 .modal .pointer {
+    margin: -6px 0 0;
+    background: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/modal/modal-pointer.png', sizingMethod='crop'); 
+}
+.modal a.close {
+	background: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-close-bg.jpg) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 29px;
+	line-height: 27px;
+	height: 27px;
+	font-size: 14px;
+	text-indent: -10000px;
+	z-index:4000;
+
+}
+.modal a.close:hover {
+	background-position: 0px -27px;
+}
+
+/* Modal Custom Styles */
+.modal .content_button_same_page,
+.modal .content_button {
+	font-size:10px !important;
+}
+
+/* Cluetip Additions To the Modal */
+/* global */
+#cluetip-close img {
+  border: 0;
+}
+#cluetip-title {
+  overflow: hidden;
+}
+#cluetip-title #cluetip-close {
+  float: right;
+  position: relative;
+}
+.cluetip-arrows {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  height: 22px;
+  width: 11px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#cluetip-extra {
+  display: none;
+}
+/***************************************
+   =cluetipClass: 'default' 
+-------------------------------------- */
+
+.msie6 .cluetip-default {
+  border: 1px solid #ccc;
+}
+.cluetip-default #cluetip-outer {  
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_top.png) no-repeat scroll left top;
+	margin-right:4px;
+	overflow:visible;
+	padding:4px 0 0 4px;
+	position:relative;
+	text-align:left;
+	font-size:11px;
+}
+.msie6 .cluetip-default #cluetip-outer{
+	background: none;
+	padding:0;
+	margin: 0;
+}
+.cluetip-default div#cluetip-title { 
+ 	background:#EBEBEB url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/faq_question_bug3.gif) no-repeat scroll 5px 5px;
+	color:#375C7E;
+	display:block;
+	font-weight:bold;	
+	padding:7px 5px 5px 25px;
+	border:2px solid #FFFFFF;
+	border-bottom:none;
+	overflow:visible;
+	position:relative;
+	z-index:2;
+}
+.cluetip-default #cluetip-title a {
+	color: #d9d9c2;
+	font-size: 0.95em;
+}  
+.cluetip-default #cluetip-inner {  
+	padding:0 5px 5px 30px;
+	background:#EBEBEB none repeat scroll 0 0;
+	border:2px solid #FFFFFF;
+	border-top: none;
+	overflow:visible;
+	position:relative;
+	z-index:2;
+	font-size:10px;
+}
+.cluetip-default #cluetip-inner:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+} 
+.cluetip-default #cluetip-inner{display: inline-block;} 
+html[xmlns] .cluetip-default #cluetip-inner{display: block;} 
+* html .cluetip-default #cluetip-inner{height: 1%;}
+.lockfield #cluetip-inner,
+.vehicle_cluetip #cluetip-inner{
+	padding:5px;
+	border:2px solid #FFFFFF;
+}
+.cluetip-default .cluetip-bottom {
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_bottom.png) no-repeat scroll right bottom;
+	height:100%;
+	left:4px;
+	position:absolute;
+	right:0;
+	top:4px;
+	width:100%;
+	z-index:1;
+}
+.msie6 .cluetip-default .cluetip-bottom{background: none;}
+.cluetip-default #cluetip-topRight {
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_tr.png) no-repeat scroll 0 0;
+	height:4px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:4px;
+	z-index: 10001;
+}
+.msie6 .cluetip-default #cluetip-topRight{display:none;}
+.cluetip-default #cluetip-bottomLeft {
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal_bl.png) no-repeat scroll 0 0;
+	bottom:-4px;
+	height:4px;
+	left:0;
+	position:absolute;
+	width:4px;
+	z-index: 10001;
+}
+.msie6 .cluetip-default #cluetip-bottomLeft{display:none;}
+.cluetip-default div#cluetip-close { 
+	text-align: right;
+	margin: 0 5px 5px;
+	color: #900;
+}
+
+/* default arrows */
+
+.clue-right-default .cluetip-arrows { 
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-pointer-left.png) no-repeat;
+	height: 30px;
+	width: 17px;  
+}
+.msie6 .clue-right-default .cluetip-arrows {   
+    background: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/modal/cluetip-pointer-left-ie6.png', sizingMethod='crop'); 
+}
+.clue-left-default .cluetip-arrows {  
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-pointer-right.png) no-repeat;
+	left: auto;
+	right: 4px;
+	top: 4px;
+	margin-right: -17px;
+	height: 30px;
+	width: 17px;  
+}
+.msie6 .clue-left-default .cluetip-arrows{ 
+	right: -1px;  
+    background: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/modal/cluetip-pointer-right-ie6.png', sizingMethod='crop'); 
+}
+.clue-top-default .cluetip-arrows {	
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-pointer.png) no-repeat;
+	top: 100%;
+	left: 25%;
+	margin-left: -30px;
+	height: 17px;
+	width: 30px;  
+}  
+.msie6 .clue-top-default .cluetip-arrows{   
+    background: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/modal/cluetip-pointer-ie6.png', sizingMethod='crop'); 
+}
+.clue-bottom-default .cluetip-arrows {	
+	background:transparent url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/modal/modal-pointer-up.png) no-repeat;
+	top: -13px;
+	left: 80%;
+	margin-left: -17px;
+	height: 17px;
+	width: 30px;
+}
+.msie6 .clue-bottom-default .cluetip-arrows{   
+    background: none;
+	top: -17px;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/modal/cluetip-pointer-up-ie6.png', sizingMethod='crop'); 
+}
+/* 
+=============================================
+			UTILITY CLASSES
+============================================= */
+.floatRight {
+	float : right;
+}
+.floatLeft {
+	float : left;
+}
+.newLine {
+	clear: both;
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+.killMargin {
+	margin:0;
+}
+.hidden {
+	visibility: hidden;
+	height: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden;
+}
+.clear { clear:both; }
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* CSP Sidebar Navigation */
+ul#contentNavigation.csp_nav li {
+	margin: 0 !important;
+}
+ul#contentNavigation.csp_nav li {
+	padding: 10px 0 10px 46px;
+	background-color:transparent;
+	background-image: url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/global/contentNavigation_section_csp.png);
+	background-repeat: no-repeat;
+}
+ul#contentNavigation.csp_nav li.cspNav1 {
+	background-position: 0 -3px;
+}
+ul#contentNavigation.csp_nav li.cspNav1_on {
+	background-position: -233px -3px;
+}
+ul#contentNavigation.csp_nav li.cspNav2 {
+	background-position: 0 -44px;
+}
+ul#contentNavigation.csp_nav li.cspNav2_on {
+	background-position: -233px -44px;
+}
+ul#contentNavigation.csp_nav li.cspNav3 {
+	background-position: 0 -84px;
+}
+ul#contentNavigation.csp_nav li.cspNav3_on {
+	background-position: -233px -84px;
+}
+ul#contentNavigation.csp_nav li.cspNav4 {
+	background-position: 0 -124px;
+}
+ul#contentNavigation.csp_nav li.cspNav4_on {
+	background-position: -233px -124px;
+}
+ul#contentNavigation.csp_nav li.cspNav5 {
+	background-position: 0 -164px;
+}
+ul#contentNavigation.csp_nav li.cspNav5_on {
+	background-position: -233px -164px;
+}
+.csp_step_button1{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/csp/csp_step1.jpg) repeat-x 0 0;	
+	border:0px;
+	color:#4C647E;
+	display:block;
+	float:left;	
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:6px;
+	padding-left:10px;
+	width:124px;
+	height:24px;
+}
+.csp_step_button2{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/csp/csp_step2.jpg) repeat-x 0 0;	
+	border:0px;
+	color:#4C647E;
+	display:block;
+	float:left;	
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:6px;
+	padding-left:10px;
+	width:124px;
+	height:24px;
+}
+.csp_step_button3{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/csp/csp_step3.jpg) repeat-x 0 0;	
+	border:0px;
+	color:#4C647E;
+	display:block;
+	float:left;	
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:6px;
+	padding-left:10px;
+	width:124px;
+	height:24px;
+}
+.csp_step_button4{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/csp/csp_step4.jpg) repeat-x 0 0;	
+	border:0px;
+	color:#4C647E;
+	display:block;
+	float:left;	
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:6px;
+	padding-left:10px;
+	width:124px;
+	height:24px;
+}
+.csp_step_button5{
+	background:url(https://web.archive.org/web/20110307001607im_/http://www.hyundaiusa.com/images/csp/csp_step5.jpg) repeat-x 0 0;	
+	border:0px;
+	color:#4C647E;
+	display:block;
+	float:left;	
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:6px;
+	padding-left:10px;
+	width:124px;
+	height:24px;
+}
+
+/*
+     FILE ARCHIVED ON 00:16:07 Mar 07, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:02:55 Oct 09, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.611
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.01
+  esindex: 0.013
+  cdx.remote: 14.11
+  LoadShardBlock: 119.549 (3)
+  PetaboxLoader3.datanode: 145.663 (5)
+  PetaboxLoader3.resolve: 129.059 (3)
+  load_resource: 180.841 (2)
+*/
